@@ -1,3 +1,49 @@
+### Python method chaining
+
+use \ at end of line, e.g.
+
+```python
+content = content.replace('?', ' ?') \
+                 .replace('!', ' !') \
+                 .replace(';', ' ;')
+```
+<hr>
+
+### Vim split screen
+
+`:vs <file>` to open file in split
+
+in config: `set splitright` to ensure new file goes on right-hand side
+
+use `<C+w>h`/`<C+w>l` to go to left/right pane
+
+replace above with `<leader>h`/`<leader>l`
+
+make 50/50 size with `<C+w>=`
+
+<hr>
+
+### VSCode show hover using keyboard
+
+```json
+{
+  "key": "ctrl+escape",
+  "command": "editor.action.showHover",
+  "when": "editorTextFocus"
+}
+```
+
+<hr>
+
+### Switch Caps Lock <-> Escape
+
+There is a setting in `Gnome Tweaks` -> `Keyboard & Mouse` -> `Additional Layout Options` -> `Caps Lock behaviour`
+
+To ensure the switch is applied in VSCode as well, add this to `settings.json`:
+```
+"keyboard.dispatch": "keyCode",
+```
+
 <hr>
 
 ### Use international keyboard for French (Linux, Gnome)
@@ -6,15 +52,16 @@ Add international keyboard: In keyboard settings add input source. Click English
 
 Switch between input sources: `Super+Space`
 
-| Character          | Key     |
-|--------------------|---------|
-| «                  | AltGr+[ |
-| »                  | AltGr+] |
-| ç                  | AltGr+, |
-| accent aigu        | 'e      |
-| accent grave       | `e      |
-| accent circonflexe | ^o      |
-| tréma              | "e      |
+| Character          | Key            |
+|--------------------|----------------|
+| «                  | AltGr+[        |
+| »                  | AltGr+]        |
+| ç                  | AltGr+,        |
+| Ç                  | Shift+ AltGr+, |
+| accent aigu        | 'e             |
+| accent grave       | `e             |
+| accent circonflexe | ^o             |
+| tréma              | "e             |
 
 
 
@@ -82,5 +129,3 @@ Show alternatives `z=`
 Good word (add to dictionary) `zg`
 
 Bad word (remove from dictionary) `zb`
-
-
