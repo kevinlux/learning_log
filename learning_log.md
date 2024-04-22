@@ -106,6 +106,7 @@ Switch between input sources: `Super+Space`
 | accent grave       | `e             |
 | accent circonflexe | ^o             |
 | tréma              | "e             |
+| œ                  | AltGr+k        |
 
 
 
