@@ -1,3 +1,15 @@
+### Vim clipboard issues
+
+Instead of vim use gvim in TUI mode.
+
+Add alias to `.bashrc`:
+
+```
+alias vim='gvim -v'
+```
+
+<hr>
+
 ### Pop_OS! login screen access terminal
 
 `Ctrl+Alt+F5`
