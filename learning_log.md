@@ -1,3 +1,35 @@
+### Pop_OS! login screen access terminal
+
+`Ctrl+Alt+F5`
+
+to switch back to GUI:
+
+`Ctrl+Alt+F1`
+
+<hr>
+
+### Fix gaming PC waking from sleep immediately and freezing
+
+```
+sudo /bin/sh -c '/bin/echo GPP0 > /proc/acpi/wakeup'
+sudo /bin/sh -c '/bin/echo GPP8 > /proc/acpi/wakeup'
+```
+
+put into script
+
+<hr>
+
+### Multiline field in CSV column
+
+Surround with "", e.g.
+
+```
+"first
+column", second column
+```
+
+<hr>
+
 ### Python method chaining
 
 use \ at end of line, e.g.
